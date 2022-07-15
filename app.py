@@ -34,7 +34,7 @@ class ProductoSchema(ma.Schema):
 producto_schema = ProductoSchema()
 productos_schema = ProductoSchema(many=True)  
 
-@app.route('/productos', methods=['GET'])
+@app.route('/', methods=['GET'])
 def get_Productos():
     all_productos = Producto.query.all()    
     result = productos_schema.dump(all_productos)
