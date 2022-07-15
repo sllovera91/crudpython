@@ -20,7 +20,7 @@ function modificar() {
         precio: p,
         stock: s
     }
-    let url = "http://localhost:5000/productos/"+id
+    let url = "https://crudsanti.herokuapp.com/productos/"+id
     var options = {
         body: JSON.stringify(producto),
         method: 'PUT',
