@@ -7,7 +7,7 @@ if (document.getElementById("app")) {
             loading: true
         },
         created() {
-            var url = 'http://localhost:5000/productos'
+            var url = 'https://crudsanti.herokuapp.com/productos'
             this.fetchData(url)
         },
         methods: {
@@ -23,7 +23,7 @@ if (document.getElementById("app")) {
                     })
             },
             eliminar(producto) {
-                const url = 'http://localhost:5000/productos/' + producto;
+                const url = 'https://crudsanti.herokuapp.com/productos/' + producto;
                 var options = {
                     method: 'DELETE',
                 }
