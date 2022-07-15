@@ -7,7 +7,7 @@ function guardar() {
     precio: p,
     stock: s
     }
-    let url = "http://localhost:5000/productos"
+    let url = "https://crudsanti.herokuapp.com/productos"
     var options = {
     body: JSON.stringify(producto),
     method: 'POST',
